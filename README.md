@@ -1,173 +1,301 @@
-🗑️ Smart Dustbin
+<div align="center">
 
-A simple semester mini-project that slowly refused to stay simple.
+# 🗑️ Smart Dustbin Project
 
-What started as...
+### *From a Semester Mini Project to an Intelligent Waste Monitoring System*
 
-"Let's make a dustbin whose lid opens automatically."
+**Embedded C++ • ESP32 • ESP8266 • Arduino IDE • Wokwi • Blynk • ThingSpeak • Twilio**
 
-...eventually became
+[![Stars](https://img.shields.io/github/stars/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B?style=for-the-badge)](https://github.com/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B/stargazers)
+[![Forks](https://img.shields.io/github/forks/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B?style=for-the-badge)](https://github.com/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B/network)
+[![Issues](https://img.shields.io/github/issues/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B?style=for-the-badge)](https://github.com/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B/issues)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-"Let's build a modular intelligent waste monitoring system with cloud integration, radar-style scanning, geometric fill estimation and a finite state machine."
+<img src="docs/Images/Version-4.png" width="750">
 
-That's engineering.
+> **A modular intelligent waste monitoring system featuring touchless automation, IoT connectivity, radar-style surface scanning, and area-based fill estimation.**
 
-Evolution
-Semester 4
+</div>
 
+---
+
+# 📖 Overview
+
+This repository documents the complete evolution of our **Semester 4 Mini Project**.
+
+What began as a simple automatic dustbin gradually evolved into a modular intelligent waste monitoring system through multiple iterations, each solving a limitation of the previous version.
+
+Instead of keeping only the final implementation, this repository preserves the entire engineering journey—from the first working prototype to advanced simulation and algorithm development.
+
+---
+
+# 🚀 Project Evolution
+
+| Version | Platform | Major Contribution |
+|----------|----------|--------------------|
+| 🟢 Version 1 | ESP32 Hardware | Basic Smart Dustbin (Semester 4 MPR) |
+| 🔵 Version 2 | ESP8266 Hardware | IoT Integration (Blynk + ThingSpeak + Twilio) |
+| 🟣 Version 3 | Wokwi Simulation | Object-Oriented Architecture & Radar Scanning |
+| 🔴 Version 4 | Wokwi Simulation | Intelligent Area-Based Fill Estimation |
+
+---
+
+# 🧠 Engineering Evolution
+
+```text
 Version 1
 │
 ├── Automatic Lid
 ├── Fill Detection
-└── Hardware Prototype
-
+└── Physical Prototype
         │
-
         ▼
-
 Version 2
 │
-├── WiFi
-├── Blynk
+├── Wi-Fi Connectivity
+├── Blynk Dashboard
 ├── ThingSpeak
-├── Twilio
-└── Remote Monitoring
-
+└── Twilio SMS
         │
-
         ▼
-
 Version 3
 │
-├── OOP
-├── Three Sensors
-├── Rotating Radar
-└── Surface Scanning
-
+├── Object-Oriented Design
+├── Three Ultrasonic Sensors
+├── Rotating Scanner
+└── Radar-style Mapping
         │
-
         ▼
-
 Version 4
 │
 ├── Finite State Machine
-├── Intelligent Area Estimation
-├── Noise Reduction
-└── Better Logic
+├── Area-based Fill Estimation
+├── Sector Averaging
+└── Intelligent Waste Analysis
+```
 
-The Journey
+---
 
-🚀 Version 1
+# ✨ Features
 
-"Can we make the lid open automatically?"
+## 🤖 Automation
 
-The first working prototype.
+- Touchless lid opening
+- Automatic lid closing
+- Servo controlled mechanism
+- Overflow prevention
 
-Features
+---
 
-Touchless lid opening
-Automatic closing
-Fill level detection
-Overflow prevention
+## 📡 IoT
 
-Hardware
+- Blynk Dashboard
+- ThingSpeak Cloud Analytics
+- Twilio SMS Alerts
+- Remote Monitoring
 
-ESP32
-2 Ultrasonic Sensors
-Servo
+---
 
-🌐 Version 2
+## 🧠 Intelligent Algorithms
 
-"Now let's connect it to the Internet."
+- Object-Oriented Design
+- Finite State Machine
+- Radar-style Surface Scanning
+- Area-based Fill Estimation
+- Sector Averaging
+- Noise Reduction
 
-Added
+---
 
-Blynk Dashboard
-ThingSpeak Analytics
-SMS Notifications using Twilio
-Remote Monitoring
+## 💻 Simulation
 
-🧠 Version 3
+- Complete Wokwi Simulation
+- Hardware-independent testing
+- Easy experimentation
 
-"The code deserves better architecture."
+---
 
-Introduced
+# 📸 Project Gallery
 
-Object-Oriented Programming
-Sensor abstraction
-Three ultrasonic sensors
-Rotating scanner
-Better modularity
+## Version 1
 
-🎯 Version 4
+<img src="docs/Images/Version-1.png">
 
-"What if we actually calculate the occupied area instead of guessing?"
+---
 
-Instead of counting obstacle points,
+## Version 2
 
-the radar scan now estimates
+<img src="docs/Images/Version-2(1).png">
 
-Unoccupied Area
+<img src="docs/Images/Version-2(2).png">
 
-↓
+---
 
-Occupied Area
+## Version 3
 
-↓
+<img src="docs/Images/Version-3.png">
 
-Fill Percentage
+---
 
-Additional improvements
+## Version 4
 
-Sector averaging
-Noise reduction
-State machine
-Reset mechanism
-Better mathematical model
+<img src="docs/Images/Version-4.png">
 
-Tech Stack
-Hardware
-────────────
-ESP32
-ESP8266
-HC-SR04
-Servo Motors
-Push Buttons
-Buzzers
+---
 
-Software
-────────────
-Arduino IDE
-ESP32Servo
-ESP8266WiFi
-ThingSpeak
-Blynk
-Twilio API
+# ⚙ Technologies Used
 
-Simulation
-────────────
-Wokwi
+## Hardware
 
-Future Scope
-📷 Camera-based waste classification
-🤖 AI-powered waste segregation
-📡 LoRaWAN connectivity
-🔋 Solar-powered operation
-☁️ MQTT-based monitoring
-📍 GPS-enabled municipal deployment
-📊 Predictive collection scheduling
+- ESP32
+- ESP8266
+- HC-SR04 Ultrasonic Sensor
+- Servo Motors
+- Push Button
+- Buzzer
 
-==============================================
-        PROJECT EVOLUTION COMPLETE
+---
 
-Version 1 : ✔
-Version 2 : ✔
-Version 3 : ✔
-Version 4 : ✔
+## Software
 
-Status:
-The dustbin became smarter than expected.
+- Arduino IDE
+- Embedded C++
+- ESP32Servo
+- Servo Library
 
-Next Upgrade:
-Teach it to roast people who throw garbage beside it.
-==============================================
+---
+
+## Cloud
+
+- Blynk
+- ThingSpeak
+- Twilio
+
+---
+
+## Simulation
+
+- Wokwi
+
+---
+
+# 📂 Repository Structure
+
+```
+Smart-Dustbin-Project-MPR1B
+│
+├── Version-1_MPR_Basic
+├── Version-2_IoT
+├── Version-3_Wokwi_OOP
+├── Version-4_Intelligent_Waste_Analysis
+│
+├── docs
+│   ├── Images
+│   ├── Project_Report_MPR.pdf
+│   └── Presentation.pdf
+│
+├── LICENSE
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+└── README.md
+```
+
+---
+
+# 📊 Version Comparison
+
+| Feature | V1 | V2 | V3 | V4 |
+|----------|:--:|:--:|:--:|:--:|
+| Touchless Lid | ✅ | ✅ | ✅ | ✅ |
+| Fill Detection | ✅ | ✅ | ✅ | ✅ |
+| IoT Dashboard | ❌ | ✅ | ❌ | ❌ |
+| ThingSpeak | ❌ | ✅ | ❌ | ❌ |
+| SMS Alerts | ❌ | ✅ | ❌ | ❌ |
+| OOP Design | ❌ | ❌ | ✅ | ✅ |
+| Radar Scanning | ❌ | ❌ | ✅ | ✅ |
+| Finite State Machine | ❌ | ❌ | ❌ | ✅ |
+| Area Estimation | ❌ | ❌ | Approximate | Accurate |
+
+---
+
+# 🚀 Getting Started
+
+Clone the repository
+
+```bash
+git clone https://github.com/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B.git
+```
+
+Open the desired version inside **Arduino IDE**.
+
+Install the required libraries.
+
+Select the appropriate board
+
+- ESP32
+- ESP8266
+
+Compile and upload.
+
+---
+
+# 📚 Documentation
+
+The repository includes
+
+- 📄 Semester 4 Project Report
+- 📊 Project Presentation
+- 📷 Hardware Images
+- 🧩 Wokwi Simulations
+
+---
+
+# 👥 Team
+
+- **Suyash Subodh Shirsat**
+- **Devesh Vikrant Shelatkar**
+- **Priyanka Amit Vaidya**
+
+---
+
+# 🌱 Future Scope
+
+- AI-based waste classification
+- Camera-assisted segregation
+- MQTT integration
+- LoRa communication
+- Solar-powered deployment
+- Smart city integration
+- Predictive waste collection
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+If you'd like to improve the project,
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
+
+See the **LICENSE** file for details.
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project interesting, consider giving it a star!
+
+*"Engineering is rarely about building the perfect system on the first try. It's about continuously improving each iteration."*
+
+</div>
