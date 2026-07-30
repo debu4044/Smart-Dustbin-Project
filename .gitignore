@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Arduino temporary files
+*.tmp
+
+# Build outputs
+build/
+dist/
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+
+# Wokwi cache
+.wokwi/
+
+# Environment files
+.env
+.env.*
+
+# Secrets
+secrets.h
+credentials.h
+config.h

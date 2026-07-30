@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "author": "Suyash Shirsat",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": 6.6, "left": -64.4, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 9.6, "left": -235.16, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -36.9,
+      "left": -100.1,
+      "attrs": { "distance": "88" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic2",
+      "top": -36.9,
+      "left": 120.7,
+      "attrs": { "distance": "91" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic3",
+      "top": 163.7,
+      "left": 35.7,
+      "rotate": 180,
+      "attrs": { "distance": "211" }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 295.6,
+      "left": -249.6,
+      "attrs": { "horn": "double", "hornColor": "orange" }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo2",
+      "top": 286,
+      "left": -28.8,
+      "attrs": { "horn": "double", "hornColor": "orange" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -51.4,
+      "left": -220.8,
+      "attrs": { "color": "yellow", "xray": "1", "bounce": "1" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text1",
+      "top": 259.2,
+      "left": 48,
+      "attrs": { "text": "User Detection Sensor" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text2",
+      "top": -67.2,
+      "left": 124.8,
+      "attrs": { "text": "Level Detection Sensor" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text3",
+      "top": -67.2,
+      "left": -96,
+      "attrs": { "text": "Radar Bin Checking Sensor" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text4",
+      "top": 297.6,
+      "left": -144,
+      "attrs": { "text": "Lid Servo" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text5",
+      "top": 336,
+      "left": 153.6,
+      "attrs": { "text": "Radar Servo for Fill level Area" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text6",
+      "top": -48,
+      "left": -422.4,
+      "attrs": { "text": "Shutdown Disable Switch" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:5V", "bb1:bp.1", "red", [ "h-19.05", "v57.6", "h192", "v-9.6", "h0", "v-67.2" ] ],
+    [ "esp:GND.2", "bb1:bn.1", "black", [ "v0", "h19.2", "v172.8" ] ],
+    [ "bb1:bn.6", "bb1:16b.i", "green", [ "v0" ] ],
+    [ "bb1:19b.i", "bb1:bp.24", "green", [ "v0", "h96" ] ],
+    [ "bb1:2t.e", "bb1:bp.1", "green", [ "v0" ] ],
+    [ "bb1:5t.e", "bb1:bn.4", "green", [ "v0" ] ],
+    [ "bb1:25t.d", "bb1:bp.22", "green", [ "v19.2", "h19.2" ] ],
+    [ "bb1:28t.e", "bb1:bn.23", "green", [ "v0" ] ],
+    [ "bb1:3t.c", "esp:19", "green", [ "v0" ] ],
+    [ "bb1:26t.d", "esp:18", "green", [ "v0" ] ],
+    [ "bb1:18b.h", "esp:5", "green", [ "v0" ] ],
+    [ "esp:16", "bb1:4t.d", "green", [ "h0" ] ],
+    [ "bb1:4t.c", "bb1:27t.c", "green", [ "v0" ] ],
+    [ "bb1:27t.e", "bb1:17b.h", "green", [ "v9.6", "h-96" ] ],
+    [ "esp:GND.1", "servo1:GND", "black", [ "h-76.65", "v172.8" ] ],
+    [ "servo1:GND", "servo2:GND", "black", [ "h9.6", "v-67.2", "h211.2" ] ],
+    [ "esp:3V3", "servo1:V+", "green", [ "h-105.45", "v28.8" ] ],
+    [ "servo1:V+", "servo2:V+", "green", [ "h-9.6", "v-67.1", "h211.2", "v57.6" ] ],
+    [ "esp:23", "servo1:PWM", "green", [ "h-95.85", "v9.6" ] ],
+    [ "esp:25", "servo2:PWM", "green", [ "h-57.45", "v268.8", "h240", "v-48", "h19.2" ] ],
+    [ "esp:GND.2", "btn1:2.r", "black", [ "v-19.2", "h9.6" ] ],
+    [ "esp:26", "btn1:1.l", "magenta", [ "v-19.2", "h9.6" ] ],
+    [ "ultrasonic1:VCC", "bb1:2t.a", "", [ "$bb" ] ],
+    [ "ultrasonic1:TRIG", "bb1:3t.a", "", [ "$bb" ] ],
+    [ "ultrasonic1:ECHO", "bb1:4t.a", "", [ "$bb" ] ],
+    [ "ultrasonic1:GND", "bb1:5t.a", "", [ "$bb" ] ],
+    [ "ultrasonic2:VCC", "bb1:25t.a", "", [ "$bb" ] ],
+    [ "ultrasonic2:TRIG", "bb1:26t.a", "", [ "$bb" ] ],
+    [ "ultrasonic2:ECHO", "bb1:27t.a", "", [ "$bb" ] ],
+    [ "ultrasonic2:GND", "bb1:28t.a", "", [ "$bb" ] ],
+    [ "ultrasonic3:VCC", "bb1:19b.j", "", [ "$bb" ] ],
+    [ "ultrasonic3:TRIG", "bb1:18b.j", "", [ "$bb" ] ],
+    [ "ultrasonic3:ECHO", "bb1:17b.j", "", [ "$bb" ] ],
+    [ "ultrasonic3:GND", "bb1:16b.j", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
