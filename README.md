@@ -223,7 +223,9 @@ Smart-Dustbin-Project-MPR1B
 Clone the repository
 
 ```bash
-git clone https://github.com/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B.git
+git clone https://github.com/Sushantaman108Durgadas/Smart-Dustbin-Project-MPR1B.git
+
+git clone https://github.com/debu4044/Smart-Dustbin-Project.git
 ```
 
 Open the desired version inside **Arduino IDE**.
