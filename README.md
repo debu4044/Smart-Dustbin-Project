@@ -6,9 +6,9 @@
 
 **Embedded C++ • ESP32 • ESP8266 • Arduino IDE • Wokwi • Blynk • ThingSpeak • Twilio**
 
-[![Stars](https://img.shields.io/github/stars/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B?style=for-the-badge)](https://github.com/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B/stargazers)
-[![Forks](https://img.shields.io/github/forks/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B?style=for-the-badge)](https://github.com/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B/network)
-[![Issues](https://img.shields.io/github/issues/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B?style=for-the-badge)](https://github.com/Suyash108SushantamanDurgadas/Smart-Dustbin-Project-MPR1B/issues)
+[![Stars](https://img.shields.io/github/stars/Sushantaman108Durgadas/Smart-Dustbin-Project-MPR1B?style=for-the-badge)](https://github.com/Sushantaman108Durgadas/Smart-Dustbin-Project-MPR1B/stargazers)
+[![Forks](https://img.shields.io/github/forks/Sushantaman108Durgadas/Smart-Dustbin-Project-MPR1B?style=for-the-badge)](https://github.com/Sushantaman108Durgadas/Smart-Dustbin-Project-MPR1B/network)
+[![Issues](https://img.shields.io/github/issues/Sushantaman108Durgadas/Smart-Dustbin-Project-MPR1B?style=for-the-badge)](https://github.com/Sushantaman108Durgadas/Smart-Dustbin-Project-MPR1B/issues)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 <img src="docs/Images/Version-4.png" width="750">
